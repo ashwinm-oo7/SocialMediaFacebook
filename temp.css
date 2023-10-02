@@ -1,0 +1,42 @@
+  /* -----------modify---------------------------------------------------------------- */ */
+ /* Existing CSS styles */
+
+/* Add styles for the comments box */
+
+ #comments-box {
+    display: none; /* Initially hide the comments box */
+    position: fixed; /* Fixed position */
+    top: 0;
+    left: 0;
+    width: 50%; /* Cover the entire viewport width */
+    height: 100%; /* Cover the entire viewport height */
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+    z-index: 9999; /* Ensure the comments box is above other content */
+    padding: 20px; /* Add padding for content within the comments box */
+    box-sizing: border-box;
+}
+
+/* Style the content within the comments box */
+#comments-list {
+    max-height: 60%; /* Limit the height of the comments list */
+    overflow-y: auto; /* Add vertical scrollbar if needed */
+    background-color: #fff; /* White background for comments */
+    padding: 10px;
+}
+
+#comment-input {
+    width: 50%; /* Full width for the comment input */
+    padding: 10px;
+    margin-top: 10px;
+}
+
+#post-comment-button {
+    margin-top: 10px;
+}
+
+#comments-container {
+    height: 300px; /* Set a fixed height for the comments container */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+/* modify----------------------------------------------------------------
